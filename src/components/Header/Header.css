@@ -1,0 +1,17 @@
+.main-header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .main-title {
+    font-size: 2em;
+  }
+}

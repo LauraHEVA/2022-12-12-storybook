@@ -1,0 +1,11 @@
+.main-navigation ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .main-navigation ul {
+    font-size: 1.4rem;
+    gap: 1rem;
+  }
+}
