@@ -8,6 +8,7 @@ import "./components/Hero/Hero.css";
 import "./components/Button/Button.css";
 import "./components/MoviesList/MoviesList.css";
 import "./components/MovieCard/MovieCard.css";
+import Hero from "./components/Hero/Hero";
 
 const App = (): JSX.Element => {
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -23,20 +24,7 @@ const App = (): JSX.Element => {
 
   return (
     <Layout>
-      <section className="hero">
-        <img
-          className="hero__image"
-          src={featuredMovie.background}
-          alt={featuredMovie.title}
-        />
-        <div className="hero__content">
-          <h2 className="hero__title">{featuredMovie.title}</h2>
-          <span className="hero__info">{featuredMovie.director}</span>{" "}
-          <span className="hero__info">({featuredMovie.year})</span>
-          <span className="hero__category">{featuredMovie.category}</span>
-          <button className="button">View movie</button>
-        </div>
-      </section>
+      <Hero featuredMovie={featuredMovie}/>
       <section className="movies-block">
         <h2>Movies list</h2>
         <ul className="movies">
